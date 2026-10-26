@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1453e8">
+<meta name="description" content="Conceito de catálogo digital da Mobin Bikes Elétricas. Modelos, localização e contato com a equipe.">
+<title>Mobin — a cidade no seu ritmo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="catalog.css">
+<link rel="stylesheet" href="mobin.css">
+</head>
+<body data-theme="cidade">
+<div class="announcement">CONCEITO DE CATÁLOGO <b>●</b> INFORMAÇÕES A VALIDAR COM A MOBIN</div>
+<section class="concept-bar" aria-label="Escolha uma direção visual">
+  <span>TRÊS DIREÇÕES</span>
+  <div class="concept-options">
+    <button class="concept-option active" data-theme-choice="cidade" aria-pressed="true">Cidade no ritmo</button>
+    <button class="concept-option" data-theme-choice="urbana" aria-pressed="false">Garagem elétrica</button>
+    <button class="concept-option" data-theme-choice="leve" aria-pressed="false">Rota leve</button>
+  </div>
+</section>
+<header class="wrap nav">
+  <a href="#top" class="brand" aria-label="Mobin início">mobin<i>•</i></a>
+  <nav class="navlinks" aria-label="Navegação principal"><a href="#colecao">Bikes</a><a href="#como-escolher">Como escolher</a><a href="#loja">A loja</a></nav>
+  <div class="navright"><button class="navbtn" id="searchBtn">Buscar</button><button class="navbtn bag" id="cartBtn">Minha seleção <span id="bagCount">0</span></button></div>
+</header>
+<main id="top">
+<section class="wrap hero">
+  <div class="hero-top"><span class="eyebrow">MOBIN / BIKES ELÉTRICAS</span><span class="eyebrow">JARDIM CAMBURI · VITÓRIA</span></div>
+  <div class="hero-stage">
+    <div class="hero-copy"><span class="eyebrow">A cidade no seu ritmo.</span><h1>Seu caminho.<br><span>Mais leve.</span></h1><p>Conheça as bikes elétricas da Mobin e fale com a equipe para encontrar a opção que combina com sua rotina.</p><div class="actions"><a class="primary" href="#colecao">Explorar a bike <span>↘</span></a><a class="secondary" href="#loja">Ver localização</a></div></div>
+    <div class="hero-products"><div class="mobin-hero-art" role="img" aria-label="Ilustração conceitual de uma bicicleta elétrica Mobin"><span class="art-label">ILUSTRAÇÃO CONCEITUAL</span><svg viewBox="0 0 760 500" aria-hidden="true"><circle cx="546" cy="102" r="146" fill="#f8cd3f"/><path d="M0 412c106-18 192-39 288-28 102 12 178 44 278 32 79-9 129-31 194-50v134H0z" fill="#173fca"/><path d="M0 455c128-24 209-43 326-28 116 16 190 42 290 28 64-9 98-22 144-37" fill="none" stroke="#a8c7ff" stroke-width="5" stroke-dasharray="10 13"/><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"><circle cx="198" cy="350" r="88" stroke-width="18"/><circle cx="548" cy="350" r="88" stroke-width="18"/><path d="M198 350 306 201l131 149H198l113-90 88-151h103l50 151H437" stroke-width="14"/><path d="M284 195h66M315 182l-18-34M538 259h47M434 350l34-67" stroke-width="12"/><path d="M390 218c26-30 79-35 109-8l18 42H397z" fill="#ffffff" fill-opacity=".18" stroke-width="9"/><path d="M360 158h49" stroke-width="16"/></g><path d="M104 122h125M104 145h76" stroke="#fff" stroke-width="5" opacity=".65"/></svg><span class="art-caption">Mais caminho.<br><b>Mais Mobin.</b></span></div><div class="hero-stamp">MOBIN<br><b>MOVE</b><br>ELÉTRICO</div></div>
+    <span class="hero-index">CONCEITO / CATÁLOGO</span>
+  </div>
+</section>
+<div class="marquee" aria-hidden="true"><div class="marquee-track">A CIDADE NO SEU RITMO <b>✳</b> CONHEÇA SUA PRÓXIMA BIKE <b>✳</b> FALE COM A MOBIN <b>✳</b> A CIDADE NO SEU RITMO <b>✳</b></div></div>
+<section class="wrap section" id="colecao">
+  <div class="section-head reveal"><div><span class="eyebrow">CATÁLOGO / CONCEITO</span><h2>Encontre sua<br>próxima bike.</h2></div><p>Veja um modelo anunciado pela loja. Preço, versão e disponibilidade são confirmados diretamente com a equipe.</p></div>
+  <div class="filterbar reveal"><div class="filters" role="group" aria-label="Filtrar catálogo"><button class="filter active" data-filter="todos" aria-pressed="true">Todos</button><button class="filter" data-filter="bike" aria-pressed="false">Bikes elétricas</button></div><span class="filtercount" id="filterCount">1 MODELO</span></div>
+  <div class="catalog-tools reveal"><label class="searchbox"><span aria-hidden="true">⌕</span><input id="catalogSearch" type="search" placeholder="Buscar no catálogo" aria-label="Buscar no catálogo" autocomplete="off"><kbd>/</kbd></label><button class="compare-trigger" id="compareTrigger" aria-pressed="false">Comparar <span id="compareCount">0</span></button></div>
+  <div class="catalog-grid" id="catalog"></div>
+  <div class="trustline"><span><b>✓</b> Atendimento em Jardim Camburi</span><span><b>✓</b> Consulte modelos e disponibilidade</span><span><b>✓</b> Fale com um vendedor</span></div>
+  <p class="fine data-note">Conceito demonstrativo. O anúncio consultado apresenta a OUXI Q8; ficha, foto, preço e disponibilidade precisam ser confirmados pela Mobin antes de publicar.</p>
+</section>
+<section class="editorial" id="como-escolher"><div class="wrap editorial-grid">
+  <div class="editorial-visual reveal"><div class="route-art" role="img" aria-label="Ilustração do caminho entre rotina, escolha e loja"><span class="route-art-title">UM CAMINHO MAIS CLARO</span><svg viewBox="0 0 600 420" aria-hidden="true"><path d="M70 335C145 95 270 108 315 223S452 356 536 88" fill="none" stroke="#2874cc" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 19"/><circle cx="71" cy="334" r="25" fill="#ffcf42"/><circle cx="315" cy="223" r="25" fill="#2874cc"/><circle cx="536" cy="88" r="25" fill="#ffcf42"/><path d="M72 334l90-41 70-108 83 38 82 92 85-74 54-153" fill="none" stroke="#173fca" stroke-width="3" opacity=".3"/></svg><div class="route-stop stop-a"><b>01</b><span>SUA ROTINA</span></div><div class="route-stop stop-b"><b>02</b><span>SUA ESCOLHA</span></div><div class="route-stop stop-c"><b>03</b><span>MOBIN</span></div></div></div>
+  <div class="editorial-copy reveal"><span class="eyebrow">ESCOLHA COM A EQUIPE</span><h2>Seu uso vem primeiro.</h2><p>Trajeto, conforto e rotina ajudam a encontrar a bike certa. A equipe Mobin pode orientar a comparação e confirmar os detalhes de cada modelo.</p>
+  <ul class="inspection-list"><li><span>Uso no dia a dia</span><b>Conte seu trajeto</b></li><li><span>Conforto e posição</span><b>Compare na loja</b></li><li><span>Ficha e autonomia</span><b>Confirme a versão</b></li><li><span>Preço e disponibilidade</span><b>Consulte a equipe</b></li></ul>
+  <a href="https://wa.me/5527998598570?text=Oi%2C%20Mobin!%20Quero%20ajuda%20para%20escolher%20uma%20bike%20el%C3%A9trica." class="secondary" target="_blank" rel="noreferrer">Conversar com vendedor <span>↗</span></a></div>
+</div></section>
+<section class="wrap section" id="categorias"><div class="section-head reveal"><div><span class="eyebrow">UM BOM COMEÇO</span><h2>Qual é o seu caminho?</h2></div><p>Conte como pretende usar a bike. A Mobin pode ajudar a encontrar as opções disponíveis.</p></div>
+  <div class="categories"><a class="category" href="https://wa.me/5527998598570?text=Oi%2C%20Mobin!%20Procuro%20uma%20bike%20para%20a%20rotina%20na%20cidade." target="_blank" rel="noreferrer"><span class="symbol">CIDADE</span><div><h3>Rotina urbana</h3><small>Uma forma diferente de cruzar a cidade.</small></div></a><a class="category" href="https://wa.me/5527998598570?text=Oi%2C%20Mobin!%20Quero%20conhecer%20as%20bikes%20para%20passeios." target="_blank" rel="noreferrer"><span class="symbol">PASSEIO</span><div><h3>Novos caminhos</h3><small>Converse com a equipe sobre o seu trajeto.</small></div></a><a class="category" href="#colecao"><span class="symbol">CATÁLOGO</span><div><h3>Ver modelos</h3><small>Comece pela OUXI Q8 anunciada pela loja.</small></div></a></div>
+</section>
+<section class="service"><div class="wrap service-grid"><div class="reveal"><span class="eyebrow">PERGUNTE À MOBIN</span><h2>Escolha com<br>mais clareza.</h2><p>Se quiser, mande uma mensagem com seu tipo de trajeto e tire dúvidas sobre modelos, preço e disponibilidade.</p><a class="primary" href="https://wa.me/5527998598570?text=Oi%2C%20Mobin!%20Quero%20conhecer%20as%20bikes%20el%C3%A9tricas%20dispon%C3%ADveis." target="_blank" rel="noreferrer">Falar com a equipe <span>↗</span></a></div><div class="service-card reveal"><div class="eyebrow">CONFIRME DIRETO COM A LOJA</div><div class="service-row"><span>Modelos e versões</span><b>Consulte</b></div><div class="service-row"><span>Preço e disponibilidade</span><b>Consulte</b></div><div class="service-row"><span>Garantia e assistência</span><b>Consulte</b></div><div class="service-row"><span>Atendimento presencial</span><b>Jardim Camburi</b></div></div></div></section>
+<section class="store-section" id="loja"><div class="wrap store-inner"><div><span class="eyebrow">MOBIN / VITÓRIA — ES</span><h2>A cidade no<br>seu ritmo.</h2><p>Av. Augusto Emílio Estelita Lins, 70, loja 03 — Jardim Camburi, Vitória/ES. Confira a rota e confirme horário com a equipe.</p></div><div class="store-actions"><a class="primary" href="https://www.google.com/maps/dir//Mobin%2B-%2BLoja%2Bde%2Bbikes%2Bel%C3%A9tricas%2C%2BAv.%2BAugusto%2BEm%C3%ADlio%2BEstelita%2BLins%2C%2B70%2B-%2BLOJA%2B03%2B-%2BJardim%2BCamburi%2C%2BVit%C3%B3ria%2B-%2BES%2C%2B29092-590/%40-20.2581563%2C-40.278223%2C15z/data%3D%214m8%214m7%211m0%211m5%211m1%211s0xb819855c4c6d89%3A0x700c8d0f9359f5d6%212m2%211d-40.2674445%212d-20.2545036?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUzMS4wIKXMDSoASAFQAw%3D%3D&hl=pt-BR" target="_blank" rel="noreferrer">Abrir rota <span>↗</span></a><a class="secondary" href="https://wa.me/5527998598570" target="_blank" rel="noreferrer">WhatsApp da Mobin <span>↗</span></a></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#top">mobin<i>•</i></a><span class="fine">CONCEITO DE APRESENTAÇÃO · DADOS A VALIDAR COM A LOJA</span><div><a href="#colecao">Catálogo</a><a href="https://linktr.ee/mobinbikes" target="_blank" rel="noreferrer">Links oficiais</a></div></div></footer>
+<div class="scrim" id="scrim" aria-hidden="true"></div>
+<aside class="drawer" id="cartPanel" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cartTitle"><div class="drawer-head"><h2 id="cartTitle">Sua seleção <span id="cartTotalCount">(0)</span></h2><button class="drawer-close" id="cartClose" aria-label="Fechar seleção">×</button></div><div class="drawer-items" id="cartItems"></div><div class="drawer-bottom"><p class="drawer-note">A seleção não reserva produtos. Confirme preço e disponibilidade com a equipe.</p><a class="primary" id="cartContact" href="https://wa.me/5527998598570">Consultar no WhatsApp <span>↗</span></a></div></aside>
+<div class="modal-back" id="modalBack" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Fechar detalhes">×</button><div id="modalContent"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<aside class="compare-panel" id="comparePanel" aria-label="Comparação de modelos"><div class="compare-head"><span>Comparação · fichas a confirmar</span><button id="compareClose" class="navbtn">Limpar</button></div><div class="compare-items" id="compareItems"></div></aside>
+<script src="mobin.js" defer></script>
+</body>
+</html>
+
+
+
+
